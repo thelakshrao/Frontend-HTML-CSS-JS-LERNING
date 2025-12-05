@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>  
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width,initial -scale=1.0">
+        <meta http-equiv="x-UA-compatible"content="ie=edge">
+        <title>more on slector</title>
+        <style>
+            h1{
+                background-color: red;
+                color: black;
+                font-weight: bold;
+                text-align: center;
+            }
+            /* if p is contained by any li which is contained by div */
+            /* div li p{
+                color: yellow;
+                background-color: green;
+                font-weight: bold;
+            } */
+            /* if p is right inside div then this css will be applyied  */
+            /* div > p{
+                color: yellow;
+                background-color: green;
+                font-weight: bold;
+            } */
+
+            /* if p is right after div then this css is applied */
+            div + p{
+               color: white;
+               background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>this is my paragraph </h1>
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li><p>this is my paragraph of li </p></li>
+                    <li>this is simple li </li>
+                </ul>
+                <p>this is my inner div paragraph</p>
+            </div>
+            <p>this is my sec inner div paragraph</p>
+        </div>
+        <p>this is outermost paragraph</p>
+    </body>
+</html>

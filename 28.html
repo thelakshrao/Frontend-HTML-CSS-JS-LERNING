@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial -scale=1.0">
+    <meta http-equiv="x-UA-compatible" content="ie=edge">
+    <title>before and after pseudo slector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0 ;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5; 
+
+        }
+        #navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#navbar ul{
+  display: flex;
+  margin-left: 42rem;
+}
+
+#navbar ul li{
+  list-style: none;
+}
+
+#navbar ul li a{
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin: 1px 10px;
+  padding: 3px 18px;
+  color: #fff;
+  border-radius: 15px;
+}
+
+#navbar ul li a:hover{
+  color: red;
+}
+#navbar ul li .active{
+  color: red;
+}
+
+        section {
+            height: 344px;
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* section::before{
+            content: "this is the content"
+        } */
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 3rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="img/GYMMILOGO.png" alt="">
+            </div>
+            <ul class="navbar1">
+                <li><a class="bar active" href="index.html" target="_self">
+                        Home</a></li>
+                <li><a class="bar " href="about.html" target="_self">
+                        About</a></li>
+                <li><a class="bar " href="blog.html" target="_self">
+                        Blog</a></li>
+                <li><a class="bar " href="contact.html" target="_self">
+                        Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>welcome to the coding world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint reprehenderit hic vero corrupti, ex aliquid
+                quasi maiores sunt quisquam vitae perferendis, facere placeat!
+            </p>
+        </section>
+        <hr>
+</body>
+
+</html>

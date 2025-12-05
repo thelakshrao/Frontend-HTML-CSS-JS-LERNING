@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>  
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width,initial -scale=1.0">
+        <meta http-equiv="x-UA-compatible"content="ie=edge">
+        <title>Alignment</title>
+        <style>
+            *{
+ box-sizing: border-box;
+            }
+            body{
+                background-image: url(pexels-rahul-716398.jpg);
+                background-position: center ;
+                background-repeat: no-repeat;
+            }
+            .container{
+                background-color: rgb(35, 30, 30);
+                align-items: left;
+                 width: 900px;
+                 border: 3px solid black;
+                 margin: 33px auto;
+            }
+            .iteam{
+                 border: 5px solid grey;
+                 margin: 12px 3px;
+                 padding: 12px 3px;
+                 background-color: rgb(50, 45, 45);
+                 color: white;
+            }
+            #fruit{                
+                 float: left;
+                 width: 48%;
+            }
+            #computer{
+                float: right;
+                 width: 48%;
+            }
+            #toy{
+                /* float: left; */
+                clear: both;
+                 width: 100%;
+            }
+            p,h3{
+                /* text-align: left; */
+                /* text-align: right; */
+                /* text-align: center; */
+                text-align: justify;
+            }
+            h1{
+                color: white;
+                margin:auto;
+                width: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>welcome to my site</h1>
+            <div id="fruit" class="iteam">
+                <h3>fruit</h3>
+                <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem laudantium similique rerum maiores dignissimos, quo nostrum cumque ipsa quisquam sapiente incidunt tenetur numquam eum earum. Id odio natus consectetur neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error omnis labore ipsam ipsum corporis pariatur asperiores iure, explicabo sit commodi laudantium possimus unde natus sed doloremque architecto cupiditate sapiente voluptate beatae earum? Maiores, ex.</p>
+            </div>
+            <div id="computer" class="iteam">
+                <h3>computer</h3>
+                <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem laudantium similique rerum maiores dignissimos, quo nostrum cumque ipsa quisquam sapiente incidunt tenetur numquam eum earum. Id odio natus consectetur neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laudantium ratione maiores labore assumenda soluta voluptate animi, earum quos, exercitationem voluptas nemo ut voluptatibus dignissimos, numquam dicta aperiam esse? Praesentium quod nihil illo sed?</p>
+            </div>
+            <div id="toy" class="iteam">
+                <h3>toy</h3>
+                <p id="toypara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem laudantium similique rerum maiores dignissimos, quo nostrum cumque ipsa quisquam sapiente incidunt tenetur numquam eum earum. Id odio natus consectetur neque.</p>
+            </div>
+            <div id="stationary" class="iteam">
+                <h3>stationary</h3>
+                <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem laudantium similique rerum maiores dignissimos, quo nostrum cumque ipsa quisquam sapiente incidunt tenetur numquam eum earum. Id odio natus consectetur neque.</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>  
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width,initial -scale=1.0">
+        <meta http-equiv="x-UA-compatible"content="ie=edge">
+        <title>keyframe and animation</title>
+        <style>
+            .container{
+                background-color: greenyellow;
+            }
+              .box{
+                background-color: green;
+                width: 200px;
+                height: 200px;
+                position: relative;
+                /* animation-name: laksh1; */
+                animation-name: laksh2;
+                animation-duration: 7s;
+                animation-iteration-count: 1;
+                /* animation-fill-mode: alternate; */
+                /* animation-timing-function: ease-in-out; */
+                /* animation-delay: 3s; */
+                /* animation-direction: reverse; */
+                 
+                /* these properties set using this shorthand */
+                /* animation: animation-name animation-duration animation-timing-function animation-delay
+                animation-ittration-count aniamtion-fill-mode; */
+                /* animation: laksh1 3s ease-in 3s 1alternate ; */
+              }
+              @keyframes laksh2{
+                0%{
+                   top: 0px;
+                   left: 0px;
+                }
+                25%{
+                    top: 250px;
+                    left: 0px;
+                }
+                75%{ 
+                    top: 250px;
+                    left: 250px;
+                }
+                100%{
+                    top: 0px;
+                    left: 250px;
+                }
+              }
+              @keyframes laksh1{
+                from{
+                  width: 900px;
+                }
+                to{
+                  width: 6400px;
+                }
+              }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                this is the box
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json in javascript</title>
+</head>
+<body>
+    <div class="container">
+        this is my container
+    </div>
+    <script>
+        let jsonobj = {
+            name : "laksh",
+            channel : "laksha rao",
+            food : "bhindi",
+            friend : "mohit"
+        }
+        console.log(jsonobj);
+        // why we dont transfer the objects direactaly ?
+        // every time we don't have simple object, when we make the proper web page then 
+        // there are some nestedobject , object , functions etc, are in one object so 
+        // it is to difficult to transfer the data one by one, so we make 
+        // strings 
+        let myjsonstr = JSON.stringify(jsonobj);
+        console.log(myjsonstr);
+
+        myjsonstr = myjsonstr.replace('laksh', 'love');
+        console.log(myjsonstr);
+         
+         newjsonobj = JSON.parse(myjsonstr);
+         console.log(newjsonobj)
+    </script>
+</body>
+</html>

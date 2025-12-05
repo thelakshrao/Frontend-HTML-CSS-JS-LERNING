@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    "use strict";
+    // this strict is use for less buging 
+    // let a = 34;
+    // let a = "this is a string"; 
+    //  this is a work like a string 
+
+    // const a = 345; 
+    // after putting constant we can't change the variable
+    let a = 43;
+    a =23242 + 4;
+    console.log(a);
+
+    function helo(){
+        console.log("hey harry");
+    }
+
+    let obj = {
+        r : 67,
+        m : 45,
+        func : function thefunc(number) {
+            console.log("the number is "+ number);
+        }
+    }
+
+    document.addEventListener("click", function click(){
+         console.log("clicked");
+        //  alert("hello"); 
+        let conf = confirm("Are You Sure");
+        console.log(conf);
+    })
+
+    let arr = [23 , 56 , 45];
+    console.log(this);
+        // function myfunc(number) {
+        //     console.log("the number is "+ this);
+        // }
+        let myfunc = (number)=>{
+            console.log("this is number" +this);
+        }
+        myfunc();
+
+        setTimeout(()=> {
+            console.log("yahooo");
+        }, 3000);
+        console.log("this line is executed after settimeout function");
+</script>
+<body>
+    <h1>I am learning JS</h1>
+</body>
+</html>

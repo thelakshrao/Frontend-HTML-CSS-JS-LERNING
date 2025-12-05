@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>  
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width,initial -scale=1.0">
+        <meta http-equiv="x-UA-compatible"content="ie=edge">
+        <title>height , width , borders and backgrounds</title>
+        <style>
+            #firstparra{
+                background-color: yellow;
+                height: 50px;
+                width: 300px;
+                border-width: 4px;
+                border-color: green;
+                border-style: solid;
+                border-radius: 11px;
+                /* border: 4px solid red ;*/ 
+                /* this line no 17 is similar as this lines 13,14,15 */
+            }
+            #secondparra{
+                background-color: yellow;
+                height: 50px;
+                width: 300px;
+                border-top: 4px solid green;
+                border-bottom: 4px solid red;
+                border-right: 4px solid blue;
+                border-left: 4px solid brown;
+                border-top-left-radius: 9px;
+                border-bottom-right-radius: 40px;
+            }
+            #thirdparra{ 
+                
+                color: white;     
+                height: 500px;
+                width: 500px;
+                background-image: url(pexels-rahul-716398.jpg);
+                background-repeat: no-repeat;
+                background-position: top   center;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>this is heading </h3>
+        <p id="firstparra">this is paragraph
+            <br>
+            this is for cheaking , line go down or not 
+        </p>
+        <h3>this is  our second heading </h3>
+        <p id="secondparra">this is paragraph</p> 
+
+        <h3>this is  our third heading </h3>
+        <p id="thirdparra" align="center">this is paragraph</p>
+        <!-- <span>this is also a paragraph</span> -->
+        
+    </body>
+</html>

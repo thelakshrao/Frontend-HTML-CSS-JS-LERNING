@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial -scale=1.0">
+    <meta http-equiv="x-UA-compatible" content="ie=edge">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: rgb(230, 174, 107);
+            box-shadow: 10px 13px green; 
+            /* box-shadow: -10px -13px green; */
+            /* box-shadow: 7px 5px 10px green; */
+            /* box-shadow: 7px 5px 10px 4px green; */
+            /* box-shadow: 7px 5px 10px 4px rgba(11, 233, 225, 0.5);
+            /* box-shadow: inset 3px 5px green;
+            box-shadow: 3px 5px green, 4px 6ox red; */
+        }
+        .card h2{
+            text-shadow: 2px 3px 6px white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>this is c++ course</h2>
+            <p>if you start this course that not mean you skip inbetween the course if you skip it , then that is bad
+                for your learning Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, sunt. Voluptate,
+                ad reprehenderit
+                minima distinctio expedita quasi nostrum recusandae perspiciatis perferendis quo?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>this sis html course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis voluptatem, atque assumenda labore
+                laudantium itaque harum! Distinctio velit maiores et accusamus nesciunt.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sed debitis quaerat eum. Molestias at
+                odio aliquam beatae, ratione tenetur officiis modi.</p>
+        </div>
+    </div>
+</body>
+
+</html>
